@@ -1,7 +1,9 @@
 import { Product } from "../utils/data";
 
 
-const BASE_URL = "http://localhost:5002";
+const BASE_URL = import.meta.env.VITE_BASE_URL;
+
+console.log("Base URL:", BASE_URL);
 
 export const fetchProducts = async () => {
     // eslint-disable-next-line no-useless-catch
